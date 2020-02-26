@@ -1,3 +1,258 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+
+/* Header */
+
+header {
+	text-align: center;
+	box-sizing: border-box;
+	/*border: 1px solid black;*/
+	display: flex;
+}
+
+header nav {
+	display: flex;
+	justify-content: center;
+	margin: 30px 0px;
+	width: 75%;
+}
+
+
+
+nav a {
+	
+	width: 9%;
+	text-decoration: none;
+	color: grey
+}
+
+/* Content1 section*/
+
+.content1 {
+	display: flex;
+	justify-content: center;
+
+}
+
+.content1 .left-content1 {
+	text-align: center;
+	margin-bottom: 20px;
+	
+}
+
+.content1 .left-content1 h1 {
+	font-size: 80px;
+	margin-top: 10%;
+}
+
+.content1 img {
+	width: 25%;
+	height:25%;
+}
+
+	button {
+		background-color: azure;
+		border-radius: 10px;
+		border: 1px solid black;
+		height: 35px;
+		width: 200px;
+		font-size: 20px;
+	}
+
+/* Content2 */
+
+.content2 {
+	text-align: left;
+	/*margin: 50%; */
+	margin: 20px 30px 20px 30px;
+	display: flex;
+}
+
+
+
+
+.bigimage {
+	text-align: center;
+}
+
+.content3 {
+	display: flex;
+	margin: 20px 20px 20px 20px;
+}
+
+.contact-section {
+	margin: 10px 30px 0px 30px;
+}
+
+.copyright {
+	text-align: center;
+	margin-top: 20px;
+}
+
+/* Service exclusive starting*/
+
+.pair1, .pair2, .pair3, .pair4 {
+	display: flex;
+	
+}
+
+.serborder {
+	border: 1px solid black;
+	margin: 10px 15px 20px 10px;
+	background-color: hsla(0, 0%, 87%, 0.89);
+}
+
+.serviceList {
+	list-style-type: square;
+	list-style-position: inside;
+	margin-top: 10px;
+}
+
+ body {
+	max-width: 890px;
+	margin:auto;
+	
+}
+
+section button {
+	margin: 20px 10px;
+}
+
+.serborder h3 {
+	margin: 10px
+}
+
+.serborder p {
+	margin: 10px
+}
+
+.pair4 {
+	margin: 35px 0px 100px 0px;
+}
+
+.serviceList li {
+	margin-top: 20px;
+}
+
+.serviceimg {
+	
+	margin-bottom: 35px;
+	
+}
+
+/* Reponsive layout css*/
+
+@media(max-width: 800px) {
+    header {
+        align-items: center;
+        box-sizing: border-box;
+        /*border: 1px solid black;*/
+        display: flex;
+        flex-direction: column-reverse;
+        
+}
+   .content1 img {
+    display: none;
+}
+
+nav a {
+	
+    width: 100%;
+    align-items: ;
+	text-decoration: none;
+	color: grey
+}
+
+}
+
+@media(max-width: 500px) {
+    header nav  {
+        flex-direction: column;    
+    }
+
+    nav a {
+        /*border: 1px solid black;*/
+        margin: 10px;
+    }
+
+    nav a:hover {
+       
+        color: red;
+    }
+
+    .content2, .content3 {
+        flex-direction: column;
+    
+    }
+
+    div {
+        margin: 10px;
+    }
+}
